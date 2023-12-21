@@ -10,7 +10,7 @@ namespace Vector {
 			T* vec;
 			size_t size;
 			size_t capasity;
-			size_t growthFactor = 2;
+			const size_t growthFactor = 2;
 
 		public:
 

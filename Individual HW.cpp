@@ -79,14 +79,11 @@ int main() {
 		case 2:
 			if (flag != 1) {
 				flag = 2;
-				if (word.isEqual(ov) or word.isEqual(in) or word.isEqual(ev)) {
+				if (word.isEqual(ov) or word.isEqual(in) or word.isEqual(ev))
 					help_vec.pushBack(idze);
-					help_vec.pushBack(' ');
-				}
-				else {
+				else
 					help_vec.pushBack(word);
-					help_vec.pushBack(' ');
-				}
+				help_vec.pushBack(' ');
 			}
 		default:
 			if (flag != 1 and flag != 2) {
@@ -106,12 +103,10 @@ int main() {
 						word.slice(ending, 0, word.getSize() - 2);
 						help_vec.pushBack(ending);
 						help_vec.pushBack(idze);
-						help_vec.pushBack(' ');
 					}
-					else {
+					else
 						help_vec.pushBack(word);
-						help_vec.pushBack(' ');
-					}
+					help_vec.pushBack(' ');
 				}
 			}
 			no_last_words.popBack(word.getSize() + 1);
