@@ -159,7 +159,7 @@ namespace Vector {
 			}
 
 			Vector<T>& getLastWord(Vector<T>& v) const {
-				if (v.getSize() == 0) {
+				if (v.getSize() == 0 and this->getSize() > 1) {
 					for (size_t elem = this->getSize() - 2; (*this)[elem] != ' '; elem--) {
 						v.pushBack((*this)[elem]);
 						if (elem == 0)
@@ -168,7 +168,7 @@ namespace Vector {
 					v.reverse();
 					return v;
 				}
-				std::cout << "Vector is not empty" << std::endl;
+				std::cout << "Source Vector is empty or destination Vector is not empty" << std::endl;
 				return v;
 			}
 
