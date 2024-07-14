@@ -83,7 +83,7 @@ inline Vector::Vector<T>::~Vector() {
 template<typename T>
 inline Vector::Vector<T>& Vector::Vector<T>::operator=(const Vector<T>& v) {
 	if (this == &v)
-		return *this; // Çàùèòà îò ñàìîïðèñâàèâàíèÿ
+		return *this; // Ð—Ð°Ñ‰Ð¸Ñ‚Ð° Ð¾Ñ‚ ÑÐ°Ð¼Ð¾Ð¿Ñ€Ð¸ÑÐ²Ð°Ð¸Ð²Ð°Ð½Ð¸Ñ
 	this->reset(v);
 	return *this;
 }
